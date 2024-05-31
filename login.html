@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Сторінка входу</title>
+</head>
+<body>
+    <h1>Вхід на сторінку блогу</h1>
+    <form id="loginForm">
+        <label for="username">ПІБ:</label>
+        <input type="text" id="username" placeholder="Введіть ім'я користувача" required>
+
+        <label for="password">Пароль</label>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Пароль" required>
+            <img id="showPassword" src="images/image.png" alt="Show Password" style="cursor: pointer;">
+        </div>
+
+        <button type="submit">Увійти</button>
+        <button id="goBack" type="button">Назад</button>
+    </form>
+    <p id="forgotPassword" style="cursor: pointer; color: blue; text-decoration: underline;">Забули пароль?</p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
