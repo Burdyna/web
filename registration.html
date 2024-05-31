@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="registration.css">
+    <title>Реєстраційна форма</title>
+</head>
+<body>
+    <form id="registrationForm">
+        <p>Реєстрація для блогу ''БКЛ''</p>
+        <label for="name">ПІБ</label>
+        <input type="text" id="name" placeholder="ПІБ" required>
+        
+        <label for="dob">Дата народження</label>
+        <input type="date" id="dob" required>
+
+        <label for="gender">Стать</label>
+        <select id="gender" required>
+            <option value="">Стать</option>
+            <option value="male">Чоловіча</option>
+            <option value="female">Жіноча</option>
+        </select>
+
+        <label for="country">Країна</label>
+        <select id="country" required>
+            <option value="">Виберіть країну</option>
+            <option value="AR" data-phone-code="54">Аргентина</option>
+            <option value="AU" data-phone-code="61">Австралія</option>
+            <option value="AT" data-phone-code="43">Австрія</option>
+            <option value="BE" data-phone-code="32">Бельгія</option>
+            <option value="BR" data-phone-code="55">Бразилія</option>
+            <option value="CA" data-phone-code="1">Канада</option>
+            <option value="CN" data-phone-code="86">Китай</option>
+            <option value="EG" data-phone-code="20">Єгипет</option>
+            <option value="FI" data-phone-code="358">Фінляндія</option>
+            <option value="FR" data-phone-code="33">Франція</option>
+            <option value="DE" data-phone-code="49">Німеччина</option>
+            <option value="GB" data-phone-code="44">Велика Британія</option>
+            <option value="IN" data-phone-code="91">Індія</option>
+            <option value="ID" data-phone-code="62">Індонезія</option>
+            <option value="IT" data-phone-code="39">Італія</option>
+            <option value="JP" data-phone-code="81">Японія</option>
+            <option value="KR" data-phone-code="82">Південна Корея</option>
+            <option value="MX" data-phone-code="52">Мексика</option>
+            <option value="NL" data-phone-code="31">Нідерланди</option>
+            <option value="NO" data-phone-code="47">Норвегія</option>
+            <option value="PH" data-phone-code="63">Філіппіни</option>
+            <option value="PL" data-phone-code="48">Польща</option>
+            <option value="ZA" data-phone-code="27">ПАР</option>
+            <option value="ES" data-phone-code="34">Іспанія</option>
+            <option value="SE" data-phone-code="46">Швеція</option>
+            <option value="CH" data-phone-code="41">Швейцарія</option>
+            <option value="TW" data-phone-code="886">Тайвань</option>
+            <option value="TH" data-phone-code="66">Таїланд</option>
+            <option value="TR" data-phone-code="90">Туреччина</option>
+            <option value="UA" data-phone-code="380">Україна</option>
+            <option value="US" data-phone-code="1">Сполучені Штати Америки</option>
+        </select>
+
+        <label for="phone">Номер телефону</label>
+        <input type="tel" id="phone" placeholder="Номер телефону" required>
+
+        <label for="email">Пошта</label>
+        <input type="email" id="email" placeholder="Пошта" required>
+
+        <label for="password">Пароль</label>
+<div class="password-container">
+    <input type="password" id="password" placeholder="Пароль" required>
+    <img id="showPassword" src="images/image.png" alt="Show Password" style="cursor: pointer;">
+</div>
+
+
+        <button type="submit">Зареєструватися</button>
+        <button id="goBackReg">Назад</button> 
+    </form>
+    
+    <div id="message"></div>
+    
+    <button id="back" style="display: none;">Повернутися до форми</button>
+
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
+</body>
+</html>
