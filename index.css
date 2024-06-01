@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #aaaaaa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding: 20px;
+    text-align: center;
+}
+nav .auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #cccccc;
+    ;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+
+}
+.small-image {
+    width: 500px; 
+    height: auto;
+    float: right;
+    margin: 0px 0 0px 20px; /* Відступи з усіх боків для відокремлення зображення */
+}
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-indent: 1em; /* Відступ першого рядка абзацу */
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Розміщення всіх елементів меню в край */
+    align-items: center;
+    padding: 0 20px;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.auth-buttons button:hover {
+    background-color: #45a049;
+}
+
