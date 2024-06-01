@@ -1,21 +1,21 @@
 $(document).ready(function () {
     document.getElementById('goBack').addEventListener('click', function (event) {
-        event.preventDefault(); // Відміна стандартної дії кнопки
-        window.location.href = 'index.html'; // Перенаправлення на головну сторінку блогу
+        event.preventDefault(); 
+        window.location.href = 'index.html'; 
     });
 
-    // Показ або приховування паролю
+    
     $("#showPassword").click(function () {
         var passwordInput = $("#password");
         var type = passwordInput.attr("type");
         if (type === "password") {
             passwordInput.attr("type", "text");
-            $(this).attr("src", "images/image1.png"); // Змінюємо зображення на image1.png
-            $(this).attr("alt", "Hide Password"); // Змінюємо альтернативний текст
+            $(this).attr("src", "images/image1.png"); 
+            $(this).attr("alt", "Hide Password"); 
         } else {
             passwordInput.attr("type", "password");
-            $(this).attr("src", "images/image.png"); // Змінюємо зображення на image.png
-            $(this).attr("alt", "Show Password"); // Змінюємо альтернативний текст
+            $(this).attr("src", "images/image.png"); 
+            $(this).attr("alt", "Show Password");
         }
     });
 
@@ -23,6 +23,17 @@ $(document).ready(function () {
         event.preventDefault();
         var username = document.getElementById("username").value;
         var password = document.getElementById("password").value;
+        var recaptchaResponse = grecaptcha.getResponse();
+
+        if (!recaptchaResponse) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Помилка',
+                text: 'Будь ласка, підтвердьте, що ви не робот.',
+                confirmButtonText: 'OK'
+            });
+            return;
+        }
 
         if (!password.match(/[A-Z]/) || !password.match(/[0-9]/) || !/^[A-Za-z0-9]+$/.test(password)) {
             Swal.fire({
