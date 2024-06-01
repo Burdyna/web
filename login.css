@@ -5,7 +5,7 @@
 
 .password-container img {
     position: absolute;
-    right: 8.1px;
+    right: 8px;
     top: 20%;
     transform: translateY(-20%);
     width: 12%;
@@ -13,7 +13,7 @@
 }
 
 .login-form {
-    max-width: 310px;
+    max-width: 300px;
     background-color: #aaaaaa;
     padding: 20px;
     border-radius: 10px;
