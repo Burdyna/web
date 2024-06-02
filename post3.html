@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html lang="uk"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Головна сторінка</title> 
+    <link rel="stylesheet" type="text/css" href="post1.css"> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+    <script src="js/home.js" defer></script> 
+</head> 
+<body> 
+    <header> 
+        <nav> 
+            <img src="images/logo.png" alt="Логотип" class="logo">  
+            <div class="profile-menu"> 
+                <button class="profile-button">Профіль</button> 
+                <div class="profile-dropdown" id="profileDropdown"> 
+                    <button onclick="window.location.href='profile.html'">Профіль користувача</button> 
+                    <button onclick="window.location.href='index.html'">Вийти</button> 
+                </div> 
+            </div> 
+        </nav> 
+    </header> 
+ 
+    <div class="content"> 
+        <aside class="sidebar"> 
+            <button class="add-post-button" onclick="window.location.href='add.html'">Додати публікацію</button> 
+            <div class="post-list"> 
+                <span>Список публікацій</span> 
+                <button class="filter-button">Фільтрувати</button> 
+                <div class="filter-dropdown" id="filterDropdown"> 
+                    <button class="filter-option" data-sort="desc">За спаданням дати</button> 
+                    <button class="filter-option" data-sort="asc">За зростанням дати</button> 
+                </div> 
+                <div class="labels">
+                    <div class="post-item" data-date="2023-06-01">
+                        <button class="add-post-button" onclick="window.location.href='post1.html'">Футбол це життя</button>
+                        <span class="post-date">2024-06-02</span>
+                    </div>
+                    <div class="post-item" data-date="2022-12-15">
+                        <button class="add-post-button" onclick="window.location.href='post2.html'">Чорнобильска трагедія</button>
+                        <span class="post-date">2024-06-01</span>
+                    </div>
+                    <div class="post-item" data-date="2023-01-10">
+                        <button class="add-post-button" onclick="window.location.href='post3.html'">Льодниковий період</button>
+                        <span class="post-date">2024-06-03</span>
+                    </div>
+                </div>
+            </div> 
+        </aside> 
+        <h1>Льодниковий період</h1> 
+        <main class="main-content"> 
+            <div class="text-image-container">
+                <div class="text-content">
+                    <h2>Детальніше</h2> 
+                    <p>Менфред, Дієго, Скретт, Букі та Дженні об'єднуються, щоб вижити в світі, що зазнає раптових геологічних змін. Однак, це не лише подорож в пошуках безпеки, але й шлях до власної самоідентифікації та взаєморозуміння.</p>
+                    <p>Букі та Дженні, два опосуми, додають колориту групі своїм свіжим поглядом на життя та готовністю допомогти. Їхній життєрадісний підхід до будь-якої ситуації допомагає героям не втратити віру в майбутнє, навіть коли все здається безнадійним.</p>
+                    <p>Під час подорожі вони зустрічаються з різноманітними тваринами, кожна з яких має свої мрії та цілі. Це відкриває їм очі на різноманітність життя та важливість толерантності. Через взаємодію з іншими персонажами вони розуміють, що справжня сила полягає в єдності та взаємопідтримці..</p>
+                    <p>У кінці своєї подорожі герої знаходять не лише новий дім, а й нову родину - спільноту тварин, яка знає, що разом вони можуть подолати будь-які труднощі. Їхній шлях став свідченням про те, що справжня сила полягає в дружбі, взаємопідтримці та різноманітності.</p>
+                    </div>
+                <div class="image-content">
+                    <img src="images/mamonty.jpg" alt="Центральне зображення">
+                </div>
+            </div>
+        </main> 
+        <button class="sidebar-toggle">≡</button> 
+    </div> 
+</body> 
+</html>
