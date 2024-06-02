@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Профіль користувача</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
 </head>
 <body>
     <header>
@@ -31,21 +31,6 @@
         </div>
         <button onclick="window.location.href='edit.html'">Редагувати інформацію</button>
     </main>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.getElementById('userName').textContent = localStorage.getItem('name');
-            document.getElementById('userDob').textContent = localStorage.getItem('dob');
-            document.getElementById('userGender').textContent = localStorage.getItem('gender');
-            document.getElementById('userCountry').textContent = localStorage.getItem('country');
-            document.getElementById('userPhone').textContent = localStorage.getItem('phone');
-            document.getElementById('userEmail').textContent = localStorage.getItem('email');
-
-            const profilePicture = localStorage.getItem('profilePicture');
-            if (profilePicture) {
-                document.getElementById('profileImage').src = profilePicture;
-            }
-        });
-    </script>
+    <script src="js/profile.js"></script> 
 </body>
 </html>
