@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="uk"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Головна сторінка</title> 
+    <link rel="stylesheet" type="text/css" href="post1.css"> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+    <script src="js/home.js" defer></script> 
+</head> 
+<body> 
+    <header> 
+        <nav> 
+            <img src="images/logo.png" alt="Логотип" class="logo">  
+            <div class="profile-menu"> 
+                <button class="profile-button">Профіль</button> 
+                <div class="profile-dropdown" id="profileDropdown"> 
+                    <button onclick="window.location.href='profile.html'">Профіль користувача</button> 
+                    <button onclick="window.location.href='index.html'">Вийти</button> 
+                </div> 
+            </div> 
+        </nav> 
+    </header> 
+ 
+    <div class="content"> 
+        <aside class="sidebar"> 
+            <button class="add-post-button" onclick="window.location.href='add.html'">Додати публікацію</button> 
+            <div class="post-list"> 
+                <span>Список публікацій</span> 
+                <button class="filter-button">Фільтрувати</button> 
+                <div class="filter-dropdown" id="filterDropdown"> 
+                    <button class="filter-option" data-sort="desc">За спаданням дати</button> 
+                    <button class="filter-option" data-sort="asc">За зростанням дати</button> 
+                </div> 
+                <div class="labels">
+                    <div class="post-item" data-date="2023-06-01">
+                        <button class="add-post-button" onclick="window.location.href='post1.html'">Футбол це життя</button>
+                        <span class="post-date">2024-06-02</span>
+                    </div>
+                    <div class="post-item" data-date="2022-12-15">
+                        <button class="add-post-button" onclick="window.location.href='post2.html'">Чорнобильска трагедія</button>
+                        <span class="post-date">2024-06-01</span>
+                    </div>
+                    <div class="post-item" data-date="2023-01-10">
+                        <button class="add-post-button" onclick="window.location.href='post3.html'">Льодниковий період</button>
+                        <span class="post-date">2024-06-03</span>
+                    </div>
+                </div>
+            </div> 
+        </aside> 
+        <h1>Футбол - це життя</h1> 
+        <main class="main-content"> 
+            <div class="text-image-container">
+                <div class="text-content">
+                    <h2>Футбольна Академія Real Madrid 15</h2> 
+                    <p>Футбольний клуб Реал Мадрид – це не лише велика назва в світі футболу, а й символ елегантності, відданості та високої якості.
+                    Його академія, безперечно, відображає ці принципи, будуючи майбутнє для клубу та світового футболу в цілому.</p>
+                    <p>Академія Реал Мадрид – це не просто місце, де молоді таланти вчаться грати в футбол. Це інституція, де кожен аспірант навчається не тільки техніці та тактиці гри, але й виховується в дусі великих цінностей, які вбачаються в історії самого клубу. Тут відбувається повне занурення у футбольну культуру, де кожен гравець відчуває себе часткою великої сім'ї, прагнучи до досягнення великих вершин.</p>
+                    <p>Навчальна програма академії Реал Мадрид є відмінною комбінацією технічної майстерності, фізичної підготовки та тактичного інтелекту. Кожен тренер тут – це не лише інструктор, а й наставник, який керується гаслом "формувати не просто гравця, але і особистість".</p>
+                    <p>Історія успіху академії Реал Мадрид – це розповідь про безліч талановитих гравців, які вирісши в цих стінах, здобули світове визнання. Вони не просто виходять на поле, вони представляють спадщину клубу, вони втілюють його філософію та стиль гри.</p>
+                    <p>Тому не дивно, що Реал Мадрид і його академія вважаються найкращими. Вони не лише розвивають футболістів, вони формують лідерів, готових до викликів сучасного світу футболу. Вони не просто грають у футбол, вони створюють історію. І це – їхня справжня сила.</p>
+                </div>
+                <div class="image-content">
+                    <img src="images/football.jpg" alt="Центральне зображення">
+                </div>
+            </div>
+        </main> 
+        <button class="sidebar-toggle">≡</button> 
+    </div> 
+</body> 
+</html>
