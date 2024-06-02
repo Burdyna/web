@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Створити блог</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" type="text/css" href="add.css">
 </head>
 <body>
     <header>
@@ -23,9 +21,8 @@
             </div>
         </nav>
     </header>
-
     <main>
-        <h1>Створити новий блог</h1>
+        <h1>Надіслати запит про новий блог</h1>
         <form id="createBlogForm" enctype="multipart/form-data">
             <label for="blogTitle">Назва блогу</label>
             <input type="text" id="blogTitle" name="blogTitle" required>
@@ -33,37 +30,18 @@
             <label for="blogContent">Вміст блогу</label>
             <textarea id="blogContent" name="blogContent" rows="10" required></textarea>
 
+            <label for="publishDate">Орієнтовна дата публікації</label>
+            <input type="date" id="publishDate" name="publishDate" required>
+
             <label for="mediaFiles">Матеріал для блогу</label>
             <input type="file" id="mediaFiles" name="mediaFiles[]" accept="image/*, video/*" multiple required>
 
-            <button type="submit">Створити</button>
+            <button type="submit">Надіслати</button>
         </form>
     </main>
 
-    <script>
-        $(document).ready(function () {
-            $(".profile-button").click(function () {
-                $("#profileDropdown").toggle();
-            });
-
-            $(document).click(function (e) {
-                if (!$(e.target).closest('.profile-menu').length) {
-                    $("#profileDropdown").hide();
-                }
-            });
-
-            $('#createBlogForm').on('submit', function(event) {
-                event.preventDefault(); 
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Успіх!',
-                    text: 'Блог додано!',
-                    confirmButtonText: 'OK'
-                }).then(function() {
-                    window.location.href = 'home.html';
-                });
-            });
-        });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/add.js"></script>
 </body>
 </html>
