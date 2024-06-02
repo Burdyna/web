@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html lang="uk"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Головна сторінка</title> 
+    <link rel="stylesheet" type="text/css" href="post1.css"> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+    <script src="js/home.js" defer></script> 
+</head> 
+<body> 
+    <header> 
+        <nav> 
+            <img src="images/logo.png" alt="Логотип" class="logo">  
+            <div class="profile-menu"> 
+                <button class="profile-button">Профіль</button> 
+                <div class="profile-dropdown" id="profileDropdown"> 
+                    <button onclick="window.location.href='profile.html'">Профіль користувача</button> 
+                    <button onclick="window.location.href='index.html'">Вийти</button> 
+                </div> 
+            </div> 
+        </nav> 
+    </header> 
+ 
+    <div class="content"> 
+        <aside class="sidebar"> 
+            <button class="add-post-button" onclick="window.location.href='add.html'">Додати публікацію</button> 
+            <div class="post-list"> 
+                <span>Список публікацій</span> 
+                <button class="filter-button">Фільтрувати</button> 
+                <div class="filter-dropdown" id="filterDropdown"> 
+                    <button class="filter-option" data-sort="desc">За спаданням дати</button> 
+                    <button class="filter-option" data-sort="asc">За зростанням дати</button> 
+                </div> 
+                <div class="labels">
+                    <div class="post-item" data-date="2023-06-01">
+                        <button class="add-post-button" onclick="window.location.href='post1.html'">Футбол це життя</button>
+                        <span class="post-date">2024-06-02</span>
+                    </div>
+                    <div class="post-item" data-date="2022-12-15">
+                        <button class="add-post-button" onclick="window.location.href='post2.html'">Чорнобильска трагедія</button>
+                        <span class="post-date">2024-06-01</span>
+                    </div>
+                    <div class="post-item" data-date="2023-01-10">
+                        <button class="add-post-button" onclick="window.location.href='post3.html'">Льодниковий період</button>
+                        <span class="post-date">2024-06-03</span>
+                    </div>
+                </div> 
+            </div> 
+        </aside> 
+        <h1>Чорнобильська трагедія</h1> 
+        <main class="main-content"> 
+            <div class="text-image-container">
+                <div class="text-content">
+                    <h2>Деталі про трагедію</h2> 
+                    <p>26 квітня 1986 року на Чорнобильській атомній електростанції в Україні стався вибух четвертого реактора. Це призвело до масивного викиду радіоактивних речовин, що сильно забруднило навколишні території.</p>
+                    <p>Аварія почалася під час тесту безпеки. Через помилки в управлінні реактором відбулося його руйнування та пожежа, яка тривала десять днів. Радіоактивна хмара поширилася на значну частину Європи, особливо постраждали Україна, Білорусь та Росія.</p>
+                    <p>Евакуація міста Прип'ять почалася лише наступного дня, коли 49 тисяч жителів були змушені залишити свої домівки. Загалом понад 300 тисяч людей евакуювали з небезпечної зони. Залишені міста і села стали частиною зони відчуження в радіусі 30 км від Чорнобиля.</p>
+                    <p>Пожежники та працівники станції, які першими прибули на місце аварії, отримали смертельні дози радіації. Багато з них загинули, інші страждали від серйозних захворювань.</p>
+                    <p>Катастрофа мала довготривалі наслідки для здоров'я мільйонів людей, спричинивши зростання випадків раку та інших хвороб. Забруднені території залишаються небезпечними протягом століть.</p>
+                    <p>Чорнобильська трагедія змінила світове ставлення до ядерної енергії, показавши необхідність посилення стандартів безпеки на атомних електростанціях. Після аварії було створено міжнародні організації для контролю і зменшення ризиків ядерних катастроф.</p>
+                </div>
+                <div class="image-content">
+                    <img src="images/4blok.jpg" alt="Центральне зображення">
+                </div>
+            </div>
+        </main> 
+        <button class="sidebar-toggle">≡</button> 
+    </div> 
+</body> 
+</html>
